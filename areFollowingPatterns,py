@@ -1,0 +1,17 @@
+def areFollowingPatterns(strings, patterns):
+    d={k:v for k,v in zip(strings,patterns)}
+    d1={k:v for k,v in zip(patterns,strings)}
+    sc=strings
+    pc= patterns
+    for i in range(len(patterns)):
+        sc[i]= d[strings[i]]
+        pc[i]= d1[patterns[i]]        
+        
+    return (patterns == strings) and ()
+    
+    
+
+strings = ["cat", "dog", "dog"]
+patterns = ["a", "b", "b"]
+
+print(areFollowingPatterns(strings,patterns))
