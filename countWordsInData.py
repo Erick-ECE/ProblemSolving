@@ -1,6 +1,6 @@
 #histogram of data.txt
 
-data = open("/home/usuario/Documentos/HackerRank/data.txt", 'r')
+data = open("/home/usuario/Documentos/ProblemSolving/data.txt", 'r')
 
 d = dict()
 for line in data:

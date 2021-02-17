@@ -12,4 +12,9 @@ nota: subarreglos de diferencia maxima
 '''
 
 
-''' TODO: implementar codigo con algoritmo de picos y valles'''
+def maxProfit(prices):
+	totprofit=0
+	for i in range(len(prices)-1):
+		if prices[i+1]>prices[i]: # means it is a peak
+			totprofit+=prices[i+1]-prices[i]
+	return totprofit
